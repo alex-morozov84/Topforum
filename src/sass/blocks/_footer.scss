@@ -1,0 +1,76 @@
+.footer {
+    position: relative;
+    height: 365px;
+    background-color: $text-color;
+    padding: 48px 0 43px;
+    &__menu {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style-type: none;
+            a {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 25px;
+                color: #ffffff;
+            }
+        }
+    }
+    &__contacts {
+        address {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 25px;
+            color: #ffffff;
+        }
+        a {
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 25px;
+            color: #ffffff;
+        }
+        &-wrap {
+            position: relative;
+            margin-bottom: 107px;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            border: 1.0px solid rgba(#fff, 0.1);
+            height: 130%;
+            left: -18%;
+            top: -2%;
+        }
+    }
+    &__underscore {
+        font-size: 14px;
+        font-weight: 300;
+        color: #f8f3e9;
+    }
+    &__design {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-text {
+            opacity: 0.3;
+            font-size: 13px;
+            font-weight: 300;
+            color: #ffffff;
+        }
+        &-logo {
+            width: 94px;
+            height: 30px;
+            opacity: 0.5;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        border: 1.0px solid rgba(#fff, 0.1);
+        width: 60%;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

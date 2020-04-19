@@ -1,0 +1,76 @@
+.promo {
+    background: url('../img/backgrounds/meeting.png') center (center / cover) no-repeat;
+    height: 440px;
+    position: relative;
+    &__banner {
+        position: absolute;
+        width: 427px;
+        height: 179px;
+        border: 1px solid rgba(white, 0.85);
+        left: 55%;
+        top: 28%;
+    }
+    &__square-outer {
+        display: flex;
+        height: 160px;
+        margin: 10px;
+        background-color: rgba(white, 0.85);
+    }
+    &__square-inner {
+        margin: 18px 20px;
+        width: 105px;
+        height: 128px;
+        background-color: #ffffff;
+        border: 1.0px solid #c99c47;
+    }
+    &__dates {
+        width: 82px;
+        margin: 25px auto;
+        span:nth-child(1) {
+            font-size: 29px;
+            line-height: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #c99c47;
+        }
+        span:nth-child(3) {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #c99c47;
+        }
+        span:nth-child(5) {
+            font-size: 34.7px;
+            line-height: 23px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #c99c47;
+        }
+    }
+    &__descr {
+        max-height: 107px;
+        width: 239px;
+        margin-top: 25px;
+        span:nth-child(1) {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #c99c47;
+        }
+        span:nth-child(3) {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 17px;
+            text-transform: none;
+            color: #323232;
+        }
+        span:nth-child(5) {
+            font-size: 13px;
+            font-weight: 300;
+            text-transform: none;
+            color: #757575;
+        }
+    }
+}

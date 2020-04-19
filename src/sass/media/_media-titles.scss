@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+    .title {
+       &_section {
+        font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        &_footer {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        &_footer {
+            font-size: 11px;
+        }
+        &_section {
+            font-size: 15px;
+        }
+    } 
+}

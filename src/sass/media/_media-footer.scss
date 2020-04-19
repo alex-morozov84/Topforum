@@ -1,0 +1,116 @@
+@media (max-width: 1199px) {
+    .footer {
+        &__contacts {
+            &:before {
+                height: 100%;
+            }
+            &-wrap {
+                margin-bottom: 50px;
+            }
+        }
+        &:after {
+            bottom: 35%;
+        }
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .footer {
+        &:after {
+            bottom: 30%;
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 25px 0;
+        height: 315px;
+        &__menu {
+           li {
+               a {
+                   font-size: 12px;
+                   line-height: 22px;
+               }
+           } 
+        }
+        &__contacts {
+            address{
+                font-size: 12px;
+                line-height: 22px;
+                margin-bottom: 0;
+            }
+            a {
+                font-size: 12px;
+                line-height: 22px;
+            }
+            &-wrap {
+                margin-bottom: 40px;
+            }
+        }
+        &__underscore {
+            font-size: 13px;
+        }
+        &__design {
+            &-text {
+                font-size: 10px;
+            }
+            img {
+                height: auto;
+                width: 75px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+   .footer {
+       padding: 15px 0;
+       height: 185px;
+        &__menu {
+            li {
+                height: 18px;
+                a {
+                    font-size: 9px;
+                    }
+            } 
+        }
+        &__contacts {
+            address{
+                font-size: 9px;
+                line-height: 11px;
+            }
+            a {
+                font-size: 9px;
+                // line-height: 15px;
+            }
+            &-wrap {
+                margin-bottom: 15px;
+            }
+        }
+        &__underscore {
+            font-size: 9px;
+        }
+        &__design {
+            &-text {
+                font-size: 9px;
+            }
+            img {
+                height: auto;
+                width: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 338px) {
+    .footer {
+         &__contacts {
+             a {
+                 line-height: 15px;
+             }
+            }
+    }
+}

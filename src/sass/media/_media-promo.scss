@@ -1,0 +1,48 @@
+@media (max-width: 991px) {
+    .promo {
+        &__banner {
+            left: 42%;
+            top: 55%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        &__banner {
+            width: 100%;
+            left: 0;
+            top: auto;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        height: 400px;
+        &__banner {
+            height: auto;
+        }
+        &__square-outer {
+            height: 130px;
+            margin: 6px;
+        }
+        &__square-inner {
+            margin: 8px;
+            height: 115px;
+        }
+        &__descr {
+            margin-top: 5px;
+            margin-right: 5px;
+            span:nth-child(1) {
+                font-size: 11px;
+            }
+            span:nth-child(3) {
+                font-size: 11px;
+                line-height: 15px;
+            }
+            
+        }
+    }
+}

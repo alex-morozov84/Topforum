@@ -1,0 +1,11 @@
+.video {
+    padding: 60px 0;
+    &__player {
+        display: block;
+        margin:0 auto;
+        margin-top: 25px;
+    }
+    video {
+        width: 682px;
+    }
+}

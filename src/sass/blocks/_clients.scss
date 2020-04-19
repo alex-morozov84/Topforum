@@ -1,0 +1,49 @@
+.clients {
+    padding-top: 45px;
+    padding-bottom: 70px;
+    height: 287px;
+    background-color: rgba(#e8d8b6, 0.3);
+    &__slider {
+        position: relative;
+        margin-top: 33px;
+        height: 100%;
+        &-wrap {
+            height: 123px;
+        }
+    }
+    &__poster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 100%;
+        background-color: #ffffff;
+        border: 1.0px solid #f8f3e9;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__arrow-left {
+        position: absolute;
+        left: -3%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: translateY(-50%) scale(1.2);
+        }
+    }
+    &__arrow-right {
+        position: absolute;
+        left: 102%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: translateY(-50%) scale(1.2);
+        }
+    }
+}

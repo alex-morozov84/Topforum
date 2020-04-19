@@ -1,0 +1,17 @@
+@media (max-width: 991px) {
+    .video {
+        padding: 30px 0;
+        video {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .video {
+        padding: 20px 0;
+        &__player {
+            margin: auto;
+        }
+    }
+}

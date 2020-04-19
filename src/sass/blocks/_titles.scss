@@ -1,0 +1,17 @@
+.title {
+    &_section {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #323232;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &_footer {
+        font-size: 14px;
+        font-weight: 400;
+        color: #c99c47;
+        text-transform: uppercase;
+    }
+}
