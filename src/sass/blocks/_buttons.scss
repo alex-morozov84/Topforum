@@ -29,6 +29,21 @@
             color: $text-color;
         }
     }
+    &_form {
+        width: 111px;
+        height: 42px;
+        background-color: $main-color;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        transition: 0.5s;
+        border: none;
+        &:hover {
+            background-color: #d4c198;
+            color: $text-color;
+        }
+    }
 }
 .black {
     background-color: #323232;

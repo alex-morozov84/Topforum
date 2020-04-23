@@ -1,0 +1,114 @@
+@media (max-width: 1199px) {
+    .contacts {
+        padding-bottom: 50px;
+    }
+    .feedback {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contacts {
+        padding-bottom: 40px;
+        &__departments {
+            font-size: 12px;
+            padding-bottom: 15px;
+        }
+    }
+    .feedback {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        &__departments {
+            font-size: 10px;
+            padding-bottom: 10px;
+            line-height: 15px;
+        }
+    }
+    .feedback {
+        padding-top: 20px;
+        .row {
+            margin-top: 20px;
+        }
+        .form__wrap {
+            form {
+                label {
+                    font-size: 12px;
+                }
+                textarea {
+                    height: 90px;
+                    margin-bottom: 10px;
+                }
+                input {
+                    height: 40px;
+                }
+                button {
+                    height: 40px;
+                }
+            }
+        }
+        &__questions {
+            span {
+                font-size: 12px;
+                &:nth-child(2) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .contacts {
+        padding-bottom: 20px;
+        &__map {
+            padding-bottom: 20px;
+            height: 300px;
+        }
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__departments {
+            padding-left: 10px;
+            width: 160px;
+            font-size: 9px;
+        }
+    }
+    .feedback {
+        padding-top: 10px;
+        .row {
+            margin-top: 10px;
+        }
+        .form__wrap {
+            form {
+                label {
+                    font-size: 10px;
+                }
+                textarea {
+                    height: 70px;
+                    margin-bottom: 10px;
+                }
+                input {
+                    height: 35px;
+                }
+                button {
+                    height: 30px;
+                }
+            }
+        }
+        &__questions {
+            margin: 10px 0 0 10px;
+            span {
+                font-size: 10px;
+                &:nth-child(2) {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@media (max-width: 991px) {
+    .sponsors {
+        &__dropdown {
+            width: 380px;
+            height: 45px;
+            &-menu {
+                ul {
+                    li {
+                        font-size: 12px;
+                        line-height: 45px;
+                    }
+                }
+                
+            }
+        }
+        &__wrap {
+            width: 700px;
+        }
+        &__company {
+            width: 220px;
+            margin-right: 10px;
+        }
+        &__logo {
+            width: 220px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sponsors {
+        padding: 35px 0;
+        &__description {
+            font-size: 14px;
+            line-height: 24px;
+            padding: 18px 0 25px;
+        }
+        &__dropdown {
+            width: 330px;
+            height: 40px;
+            &-menu {
+                ul {
+                    li {
+                        font-size: 11px;
+                        line-height: 40px;
+                    }
+                }
+                
+            }
+        }
+        &__wrap {
+            width: 500px;
+        }
+        &__company {
+            margin: 30px 10px 10px 0;
+            width: 200px;
+            &:nth-child(3) {
+                margin-right: 10px;
+            }
+        }
+        &__logo {
+            width: 200px;
+        }
+        &__type {
+            padding-bottom: 10px;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .sponsors {
+        padding: 25px 0;
+        &__description {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 12px 0 15px;
+        }
+        &__dropdown {
+            width: 260px;
+            height: 30px;
+            margin-top: 15px;
+            &-menu {
+                ul {
+                    li {
+                        padding-left: 12px;
+                        font-size: 9px;
+                        line-height: 30px;
+                    }
+                } 
+            }
+            &-title {
+                font-size: 11px;
+                padding-left: 12px;
+            }
+            img {
+                width: 16px;
+            }
+        }
+        &__wrap {
+            width: 280px;
+        }
+        &__company {
+            margin: 15px 5px 5px 0;
+            width: 130px;
+            &:nth-child(3) {
+                margin-right: 5px;
+            }
+            img {
+                width: 110px;
+            }
+        }
+        &__logo {
+            width: 130px;
+            height: 130px;
+        }
+        &__type {
+            padding-bottom: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
+        &__name {
+            padding: 10px 0;
+            &-descr {
+                font-size: 12px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

@@ -13,6 +13,12 @@
 @import 'blocks/footer';
 @import 'blocks/buttons';
 
+@import 'blocks/sponsors';
+@import 'blocks/exhibitors';
+@import 'blocks/speakers';
+@import 'blocks/media';
+@import 'blocks/contacts';
+
 
 @import 'media/media-buttons';
 @import 'media/media-titles';
@@ -23,6 +29,12 @@
 @import 'media/media-video';
 @import 'media/media-clients';
 @import 'media/media-footer';
+
+@import 'media/media-sponsors';
+@import 'media/media-exhibitors';
+@import 'media/media-speakers';
+@import 'media/media-media';
+@import 'media/media-contacts';
 
 
 /* 
@@ -47,4 +59,10 @@
 .row.slim > [class^="col-"], .slim > [class*=" col-"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.active_dropdown {
+    transition: 0.7s;
+    opacity: 1;
+    visibility: visible;
 }
