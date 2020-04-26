@@ -34,6 +34,7 @@
         position: absolute;
         top: -29px;
         right: 0px;
+        cursor: pointer;
         &:before, &:after {
             position: absolute;
             left: 15px;
@@ -59,3 +60,15 @@
     background-color: rgba(0, 0, 0, 0.56);
 }
 
+.show {
+    display: block;
+    animation: show 1s linear forwards;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
