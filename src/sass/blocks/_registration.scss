@@ -1,0 +1,188 @@
+.registration {
+    padding: 50px 0 43px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__steps {
+        margin: 40px 0 34px;
+        width: 37%;
+        div {
+            position: relative;
+            height: 58px;
+            border: 2.0px solid $main-color;
+            font-size: 14px;
+            line-height: 58px;
+            font-weight: 500;
+            color: $main-color;
+            text-align: center;
+        }
+        div+div {
+            margin-top: 23px;
+        }
+        // Стрелка при помощи псевдоэлементов
+        div+div:before, div+div:after{
+            content: "";
+            height: 5%; 
+            width: 3%;
+            position: absolute; 
+            top: -13px;
+            background: $main-color; 
+        }
+        div+div:before {
+            left: 47%;
+            transform: skew(0deg, 25deg) ;
+        }
+        div+div:after {
+            right: 47%;
+            transform: skew(0deg, -25deg) ;
+        }
+    }
+    &__form {
+        width: 60%;
+        &-labels {
+            width: 35%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &-inputs {
+            width: 65%;
+            display: inline-block;
+        }
+        div>label {
+            margin-top: 11px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 50px;
+            color: #606060;
+            margin: 0;
+            transition: 0.5s;
+            a {
+                text-decoration: underline;
+                color: #606060;
+            }
+        }
+        select {
+            width: 100%;
+            height: 50px;
+            border: 1.0px solid #e8d8b6;
+            font-size: 14px;
+            line-height: 50px;
+            font-weight: 300;
+            color: #606060;
+            padding-left: 15px;
+            appearance: none;/* убираем дефолнтные стрелочки */
+            option {
+                font-size: 14px;
+                line-height: 50px;
+                font-weight: 300;
+                color: #606060;
+            }
+        }
+        .select {
+            position: relative;
+            margin-top: 11px;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 22px;
+                height: 8px;
+                right: 2%;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                background: url('../img/dropdown_arrow.png') no-repeat;
+            }
+        }
+        input[type=radio] {
+            display: none;
+            margin-top: 11px;
+        }
+        input[type=radio]+label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: $text-color;
+            text-align: center;
+            width: 119px;
+            height: 50px;
+            background-color: #f2ead8;
+            cursor: pointer;
+        }
+        input[type=radio]:checked+label {
+            background-color: #e2cc9d;
+        }
+        input[type=text], input[type=email], input[type=url] {
+            margin-top: 11px;
+            width: 100%;
+            height: 50px;
+            border: 1.0px solid #e8d8b6;
+            font-size: 14px;
+            line-height: 50px;
+            font-weight: 300;
+            color: #606060;
+            padding-left: 15px;
+        }
+        input[name=payment]+label {
+            width: 105px;
+        }
+        input[name=payment]:checked+label {
+            background-color: $main-color;
+        }
+    }
+    &__submit {
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>div {
+            display: flex;
+            align-items: center;
+            &>label {
+                margin: 0;
+                padding-left: 5px;
+            }
+        }
+        input[type=checkbox] {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            margin: 10px 0 0 20px;
+            &+label {
+                position: relative;
+                padding: 0 0 0 30px;
+                cursor: pointer;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 19px;
+                    left: 0;
+                    top: 30%;
+                    border: 1.0px solid #e8d8b6;
+                    
+                }
+            }
+            &:checked {
+                &+label {
+                    &:before {
+                        transition: 0.5s;;
+                        background-color: $main-color;
+                    } 
+                }
+                
+            }
+        }
+    }
+}
+
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}

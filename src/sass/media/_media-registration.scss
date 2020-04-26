@@ -1,0 +1,159 @@
+@media (max-width: 1199px) {
+    .registration {
+        &__form {
+            width: 70%;
+            input[name=payment]+label {
+                width: 102px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .registration {
+        &__steps {
+            width: 55%;
+        }
+        &__form {
+            width: 90%;
+            input[name=payment]+label {
+                width: 97px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .registration {
+        padding: 35px 0;
+        &__steps {
+            margin: 20px 0;
+            div {
+                height: 45px;
+                line-height: 45px;
+                font-size: 12px;
+            }
+        }
+        &__form {
+            width: 90%;
+            div>label {
+                margin-top: 8px;
+                &[for=terms_and_cond] {
+                    margin: 0;
+                }
+            }
+            label {
+                font-size: 10px;
+                line-height: 40px;
+            }
+            select {
+                font-size: 12px;
+                line-height: 40px;
+                height: 40px;
+            }
+            .select {
+                margin-top: 8px;
+            }
+            input[type=radio]+label, input[type=text], input[type=email], input[type=url] {
+                margin-top: 8px;
+                height: 40px;
+                line-height: 40px;
+            }
+            input[name=payment]+label {
+                width: 71px;
+                font-size: 12px;
+                img {
+                    width: 80%;
+                }
+            }
+            input[type=checkbox] {
+                &+label {
+                    padding: 0 0 0 20px;
+                    &:before {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        &__submit {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .registration {
+        padding: 20px 0;
+        &__steps {
+            margin: 15px 0;
+            width: 70%;
+            div {
+                height: 35px;
+                line-height: 35px;
+                font-size: 9px;
+                border: 1.0px solid $main-color;
+            }
+        }
+        &__form {
+            width: 90%;
+            div>label {
+                margin-top: 10px;
+                &[for=terms_and_cond_mob] {
+                    margin: 0;
+                }
+            }
+            label {
+                line-height: 14px;
+            }
+            select {
+                font-size: 10px;
+                line-height: 20px;
+                height: 20px;
+            }
+            .select {
+                margin-top: 0px;
+                &:after {
+                    background-size: 11px 4px;
+                    top: 65%;
+                }
+            }
+            input[type=radio]+label, input[type=text], input[type=email], input[type=url] {
+                margin-top: 0px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 10px;
+            }
+            input[name=payment]+label {
+                width: 58px;
+                font-size: 10px;
+                img {
+                    width: 80%;
+                }
+            }
+            input[type=checkbox] {
+                &+label {
+                    padding: 0 0 0 17px;
+                    &:before {
+                        width: 12px;
+                        height: 12px;
+                        top: 5%; 
+                    }
+                }
+            }
+        }
+        &__submit {
+            button {
+                width: 95px;
+                height: 30px;
+            }
+        }
+       
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

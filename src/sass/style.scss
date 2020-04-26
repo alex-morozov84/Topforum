@@ -1,7 +1,7 @@
 @import 'libs/fonts';
 @import 'libs/bootstrap.min';
 
-
+// Блоки для главной страницы
 @import 'base/variables';
 @import 'blocks/titles';
 @import 'blocks/header';
@@ -13,13 +13,16 @@
 @import 'blocks/footer';
 @import 'blocks/buttons';
 
+// Блоки для остальных страниц
 @import 'blocks/sponsors';
 @import 'blocks/exhibitors';
 @import 'blocks/speakers';
 @import 'blocks/media';
 @import 'blocks/contacts';
+@import 'blocks/registration';
+@import 'blocks/modal';
 
-
+// Адаптация главной страницы
 @import 'media/media-buttons';
 @import 'media/media-titles';
 @import 'media/media-header';
@@ -30,37 +33,27 @@
 @import 'media/media-clients';
 @import 'media/media-footer';
 
+// Адаптаниця остнальных страниц
 @import 'media/media-sponsors';
 @import 'media/media-exhibitors';
 @import 'media/media-speakers';
 @import 'media/media-media';
 @import 'media/media-contacts';
+@import 'media/media-registration';
+@import 'media/media-modal';
 
 
-/* 
-    Специальный класс для очистки от 
-    вездесущих отрицательных границ и отступов бутстрапа. 
-
-    Без него, контейнер и колонки добавляют отступы,
-    а строки их нейтрализуют отрицательными границами.
-
-    С этим приходится бороться, 
-    обнуляя эти отступы и границы специальными правилами CSS.
-
-    Чтобы не засорять файлы стилей постоянными обнулениями,
-    мы зададим этот класс для всех строк, 
-    которые не предполагают работы с границами и отступами.
-*/
+// Класс для очистки границ и отступов Bootstrap
 .row.slim {
     margin-left: 0;
     margin-right: 0;
 }
-
 .row.slim > [class^="col-"], .slim > [class*=" col-"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
+// Класс для показа выпадающего меню
 .active_dropdown {
     transition: 0.7s;
     opacity: 1;

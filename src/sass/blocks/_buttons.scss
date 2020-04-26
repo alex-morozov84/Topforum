@@ -43,7 +43,15 @@
             background-color: #d4c198;
             color: $text-color;
         }
+        &_modal {
+            width: 129px;
+        }
+        &_center {
+            display: block;
+            margin: 0 auto;
+        }
     }
+    
 }
 .black {
     background-color: #323232;
