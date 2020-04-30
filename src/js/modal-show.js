@@ -11,4 +11,35 @@ window.addEventListener('DOMContentLoaded', () => {
 
     showModal(button, overlay, close);
 
+    $('#modalForm').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 5
+            },
+            company: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Введите, пожалуйста, свое имя и фамилию",
+                minlength: jQuery.validator.format("Длина должна быть не менее {0} символов")
+            },
+            company: {
+                required: "Введите, пожалуйста, свое имя и фамилию",
+                minlength: jQuery.validator.format("Длина должна быть не менее {0} символов")
+            },
+            email: {
+                required: "Введите, пожалуйста, свой e-mail",
+                email: "Неправильно введен адрес почты"
+            }
+        }
+    })
+
 }); 

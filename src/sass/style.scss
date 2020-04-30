@@ -21,6 +21,8 @@
 @import 'blocks/contacts';
 @import 'blocks/registration';
 @import 'blocks/modal';
+@import 'blocks/detail';
+@import 'blocks/events';
 
 // Адаптация главной страницы
 @import 'media/media-buttons';
@@ -41,6 +43,8 @@
 @import 'media/media-contacts';
 @import 'media/media-registration';
 @import 'media/media-modal';
+@import 'media/media-detail';
+@import 'media/media-events';
 
 
 // Класс для очистки границ и отступов Bootstrap

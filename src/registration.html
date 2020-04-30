@@ -17,14 +17,14 @@
             </div>
             <!-- Десктопная форма -->
             <div class="registration__form desktop">
-                <form action="#" method="POST">
+                <form action="#" method="POST" id="regForm">
 
                     <div class="registration__form-labels">
                         <div>
-                            <label for="choose_conference">Please, choose a conference:</label> 
+                            <label name="choose" for="choose_conference">Please, choose a conference:</label> 
                         </div>
                         <div>
-                            <label for="delegate_package">Please choose <a href="#">delegate package</a>:</label>
+                            <label name="delegate_package" for="delegate_package">Please choose <a href="#">delegate package</a>:</label>
                         </div>
                         <div>
                             <label for="name">Name:</label>
@@ -65,7 +65,7 @@
 
                         <div class="select-inputs">
                             <div class="select">
-                                <select id="choose_conference">
+                                <select name="choose" id="choose_conference">
                                     <option>Wealth TOP FORUM Israel 2016</option>
                                     <option>Nutrition and Dietetics (ICND) - Berlin, Germany</option>
                                     <option>Nursing & HealthCare (Nursing Congress 2020) - Paris, France</option>
@@ -84,7 +84,7 @@
                         </div>
 
                         <div>
-                            <input type="text" id="name" maxlength="20" required>
+                            <input name='name' type="text" id="name" maxlength="20" required>
                         </div>
                         <div>
                             <input type="text" id="surname" maxlength="20" required>
@@ -149,12 +149,12 @@
             </div>
             <!-- Мобильная форма -->
             <div class="registration__form mobile">
-                <form action="#" method="POST">
+                <form action="#" method="POST" id="regForm_mob">
                     <div>
                         <label for="choose_conference">Please, choose a conference:</label> 
                         <div class="select-inputs">
                             <div class="select">
-                                <select id="choose_conference">
+                                <select name="choose" id="choose_conference">
                                     <option>Wealth TOP FORUM Israel 2016</option>
                                     <option>Nutrition and Dietetics (ICND) - Berlin, Germany</option>
                                     <option>Nursing & HealthCare (Nursing Congress 2020) - Paris, France</option>
@@ -173,7 +173,7 @@
                         <label for="package2_mob">Premium</label>
                     <div>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" maxlength="20" required>
+                        <input type="text" name="name" id="name" maxlength="20" required>
                     </div>
                     <div>
                         <label for="surname">Surname:</label>
@@ -247,5 +247,6 @@
             </div>
         </div>
     </section>
+
 </body>
 </html>

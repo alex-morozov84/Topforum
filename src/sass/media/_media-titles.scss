@@ -3,6 +3,11 @@
        &_section {
         font-size: 20px;
         }
+        &_subsection {
+            &_events {
+                font-size: 15px;
+            }
+        }
     }
 }
 
@@ -20,10 +25,13 @@
             font-size: 11px;
         }
         &_section {
-            font-size: 15px;
+            font-size: 14px;
         }
         &_subsection {
-            font-size: 14px;
+            font-size: 13px;
+            &_events {
+                font-size: 13px;
+            }
         }
     } 
 }
