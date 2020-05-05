@@ -60,6 +60,9 @@
 @media (max-width: 575px) {
     .header {
         position: relative;
+        &__menu-item + &__menu-item:before {
+            display: none;
+        }
         &__top {
             z-index: 5;
             position: relative;
